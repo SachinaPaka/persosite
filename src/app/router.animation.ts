@@ -4,6 +4,18 @@ export function routerTransition() {
   return slideToTop();
 }
 
+export function routerTransitionBottom() {
+  return slideToBottom();
+}
+
+export function routerTransitionLeft() {
+  return slideToLeft();
+}
+
+export function routerTransitionRight() {
+  return slideToRight();
+}
+
 function slideToRight() {
   return trigger('routerTransition', [
     state('void', style({position:'fixed', width:'100%'}) ),
