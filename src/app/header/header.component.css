@@ -1,0 +1,3 @@
+#header{float:left;z-index:9999; position : absolute}
+ul{text-decoration:none}
+ul li{display:inline-block;text-transform:uppercase;font-size:3em; margin-left:20px }

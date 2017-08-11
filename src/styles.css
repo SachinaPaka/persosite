@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+body{position:relative;}
+#container{
+  position: absolute;
+  float: left;
+  margin-left: 20%;
+  margin-top:15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;}

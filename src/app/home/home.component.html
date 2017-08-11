@@ -1,0 +1,51 @@
+<main>
+  <div class="bg-main" id="bg" [style.background]="picToString(main.bg)">
+      <ul>
+        <li routerLinkActive="active">
+          <a routerLink="/portfolio">Portfolio</a>
+        </li>
+
+          <li routerLinkActive="active">
+            <a routerLink="/contact">Contact</a>
+          </li>
+
+          <li routerLinkActive="active">
+            <a routerLink="/cv">CV</a>
+          </li>
+        </ul>
+
+
+    <div id="presentation">
+
+      <div id="logo">
+        <img [src]="main.logo" alt="">
+      </div>
+      <div id="expert">
+        <h2 id="graph">Graphisme</h2>
+        <h2 id="proj">Gestion Projets</h2>
+        <h2 id="illu">Illustration</h2>
+      </div>
+
+      <h3>Score : {{score.valeur}}</h3>
+
+      <div class="sheeps" id="canvas">
+        <div class="sheep" id="sheep" (click)=onClick() [style.background]="picToString(main.sheep)">
+      </div>
+      </div>
+
+
+  <div id="contentnotice"></div>
+
+      </div>
+
+    <div id="GameWin">
+      <h1>Bravo !</h1>
+      <img src="../../assets/img/win.jpg" alt="">
+      <button type="button" (click)=reloadGame()>Rejouer</button>
+    </div>
+  </div>
+
+
+  <div class="bg-main" id="ssbg" [style.background]="picToString(main.ssbg)"></div>
+  <div id="ssbg2"></div>
+</main>
